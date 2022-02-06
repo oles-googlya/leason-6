@@ -13,7 +13,7 @@ RUN mkdir /var/lib/tomcat10
 RUN mkdir //var/lib/tomcat10/webapps
 RUN cd /home
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
-RUN cd boxfuse-sample-java-war-hello.git
+RUN cd home/boxfuse-sample-java-war-hello.git
 RUN mvn package
 RUN cd target/
 RUN cp hello-1.0.war /var/lib/tomcat10/webapps/
