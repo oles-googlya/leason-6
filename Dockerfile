@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
-RUN apt update
-RUN apt install -y default-jdk
-RUN apt install -y maven
-RUN apt install -y git
+RUN apt-get update
+RUN apt-get install -y default-jdk
+RUN apt-get install -y maven
+RUN apt-get install -y git
 EXPOSE 8080
 RUN cd /tmp
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat-10.0.16.tar.gz
