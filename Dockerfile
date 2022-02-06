@@ -14,4 +14,6 @@ RUN cd/home/user
 RUN git clone https://github.com/boxuse/boxuse-java-war-hello.git
 RUN cd boxuse-java-war-hello.git
 RUN mvn package
-
+RUN cd target/
+RUN cp hello-1.0.war /var/lib/tomcat10/webapps/
+CMD ["/home/tomcat/catalina.sh", "run"]
