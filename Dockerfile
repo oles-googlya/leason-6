@@ -5,7 +5,7 @@ RUN apt-get install -y maven
 RUN apt-get install -y git
 EXPOSE 8080
 RUN cd /tmp
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat-10.0.16.tar.gz
+RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat-10.0.16.tar.gz
 RUN mkdir /home/tomcat
 RUN tar xzvf apache-tomcat-10.0.16.tar.gz -C /opt/tomcat --strip-components=1
 RUN mkdir /var/lib/tomcat10
