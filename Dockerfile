@@ -11,7 +11,7 @@ RUN mkdir /home/tomcat
 RUN tar xzvf apache-tomcat-10.0.16.tar.gz -C /home/tomcat --strip-components=1
 RUN cd /tmp
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
-RNN ls
+RUN ls
 RUN cd boxfuse-sample-java-war-hello/
 RUN ls
 RUN mvn package
